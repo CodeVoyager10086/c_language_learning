@@ -61,7 +61,7 @@ int main()
 //git clone在目标文件夹克隆网上代码仓库
 // 先得拉取远程仓库
 // add-commit-push
-// 代码仓库改动后，本地先pull再push
-// 
+// 远程代码仓库改动后，本地先pull再push
+// push不成功，可能是远程仓库有改动，先pull再push
 // 目前实验得到结果是VS内commit/push不行
 //2025.11.28

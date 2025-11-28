@@ -11,9 +11,9 @@ int main()
 	//\n是转义字符，表示换行
 	printf("Hello C!\n");
 	//%d是格式控制符，表示输出一个十进制整数
-	/*int a = 0;
+	int a = 0;
 	scanf("%d", &a);
-	printf("%d\n", a);*/
+	printf("%d\n", a);
 
 	//ASCII码表
 	// A是65
@@ -62,4 +62,6 @@ int main()
 // 先得拉取远程仓库
 // add-commit-push
 // 代码仓库改动后，本地先pull再push
+// 
+// 目前实验得到结果是VS内commit/push不行
 //2025.11.28

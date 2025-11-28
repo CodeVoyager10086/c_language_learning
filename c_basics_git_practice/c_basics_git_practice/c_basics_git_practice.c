@@ -11,9 +11,9 @@ int main()
 	//\n是转义字符，表示换行
 	printf("Hello C!\n");
 	//%d是格式控制符，表示输出一个十进制整数
-	int a = 0;
+	/*int a = 0;
 	scanf("%d", a);
-	printf("%d", a);
+	printf("%d", a);*/
 
 	//ASCII码表
 	// A是65

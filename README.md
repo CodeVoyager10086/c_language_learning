@@ -1,6 +1,3 @@
 # c_language_learning
-Comprehensive C language learning resources:
-syntax notes
-algorithm implementations
-debugging tips
-project demos for all skill levels.
+Comprehensive C language learning resources:  
+resource code

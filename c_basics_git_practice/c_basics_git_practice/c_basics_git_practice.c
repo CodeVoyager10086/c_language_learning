@@ -1,12 +1,26 @@
-﻿//在newc++file.cpp文件里设置(用Everything软件找到该文件，复制一份到桌面，加入配置后再复制回原文件夹进行替换)
-// 防止VS编译器报错scanf，配置以后，新建的c文件都会有这个设置
+﻿//编译时注释会被替换成一个空格
+
+//在newc++file.cpp文件里设置(用Everything软件找到该文件，复制一份到桌面，加入配置后再复制回原文件夹进行替换)
+// 用于防止VS编译器报错scanf，配置以后，新建的c文件都会有这个设置
 #define _CRT_SECURE_NO_WARNINGS 1
+
 //引入.h头文件standard input output header file
 #include <stdio.h>
+
+//布尔类型的使用要包含头文件
+//#include <stdbool.h>
+
+//limits.h头文件定义了整型类型的取值范围
+//float.h头文件定义了浮点类型的取值范围
+
+int global_test;
+
 //int 是关键字，表示main函数返回一个整数类型的值
 //main函数也叫主函数，是程序的入口，一个C程序必须有且仅有一个main函数
 int main()
 {
+	//打印全局变量(静态区)，默认初始化为0;局部变量（栈区）不初始化则值为随机值。局部变量与全局变量同名时，局部变量优先级更高。
+	printf("%d\n", global_test);
 	//printf是一个库函数，功能是在屏幕上打印字符串
 	//\n是转义字符，表示换行
 	printf("Hello C!\n");
@@ -50,8 +64,17 @@ int main()
 	printf("%s\n", arr2);
 
 	//地址里的\要写成\\以免编译器误认为是转义字符
-	printf("(are you ok\?\?)");//三字母词
+	printf("(are you ok\?\?)\n");//三字母词
 	//	\123是三位八进制，\x21是两位16进制
+
+	//sizeof返回值类型是size_t，格式符用%zu
+	//sizeof是编译时运算符，不是函数
+
+	short s = 1;
+	int b = 2;
+	printf("%zu\n", sizeof(s = b + 1));//sizeof不会真正执行赋值操作
+	printf("s = %d\n", s);
+
 	return 0;
 }
 //设置代码文件的编码格式为：UTF-8（在文件的高级保存选项）
